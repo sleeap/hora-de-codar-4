@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+let frutas = ["Maçã", "Banana", "Laranja", "Uva", "Manga", "Melancia"];
+
+while (frutas.length > 0) {
+    
+    alert("Lista de compras atual: " + frutas.join(", "));
+
+    
+    let frutaUsuario = prompt("Digite o nome de uma fruta para remover:");
+
+   
+    if (frutas.includes(frutaUsuario)) {
+       
+        frutas.splice(frutas.indexOf(frutaUsuario), 1);
+        alert(`Fruta '${frutaUsuario}' foi retirada da lista.`);
+    } else {
+        alert(`Fruta '${frutaUsuario}' indisponível no nosso mercado.`);
+    }
+}
+
+
+alert("Lista de compras finalizada.");
+
+    </script>
+</body>
+</html>

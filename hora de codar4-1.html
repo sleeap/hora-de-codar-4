@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+let estudantes = [];
+
+while (true) {
+    
+    let nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar):");
+
+  
+    if (nome.toUpperCase() === "PARE") {
+        break;
+    }
+
+  
+    estudantes.push(nome);
+}
+
+
+alert(`Quantidade de estudantes cadastrados: ${estudantes.length}`);
+
+
+alert("Lista de estudantes:\n" + estudantes.join("\n"));
+
+    </script>
+</body>
+</html>
